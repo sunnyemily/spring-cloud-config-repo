@@ -1,7 +1,7 @@
 spring:
   application:
     # 设置应用名称，否则的话显示UNKNOWN
-    name: spring-cloud-order-server
+    name: order
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
