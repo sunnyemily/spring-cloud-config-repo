@@ -1,0 +1,31 @@
+spring:
+  application:
+    # 设置应用名称，否则的话显示UNKNOWN
+    name: spring-cloud-product-server
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: wuqiuzi88
+    url: jdbc:mysql://127.0.0.1:3306/spring_cloud?characterEncoding=utf-8&useSSL=false
+
+server:
+  # 服务端口号
+  port: 8701
+
+eureka:
+  instance:
+    # 心跳时间，即服务续约间隔时间（缺省为30s）
+    lease-renewal-interval-in-seconds: 5
+    # 发呆时间，即服务续约到期时间（缺省为90s）
+    lease-expiration-duration-in-seconds: 15
+#    hostname: product
+  client:
+    # service-url 是一个 map 类型，可以查看源码中的描述
+    # this.serviceUrl.put("defaultZone", "http://localhost:8761/eureka/");
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    # 拉取服务注册信息间隔（缺省为30s）
+    registry-fetch-interval-seconds: 10
+    # 开启健康检查（依赖spring-boot-starter-actuator）
+    healthcheck:
+      enabled: true
