@@ -29,4 +29,4 @@ eureka:
     # 开启健康检查（依赖spring-boot-starter-actuator）
     healthcheck:
       enabled: true
-env:test 
+env: test 
