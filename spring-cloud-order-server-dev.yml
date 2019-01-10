@@ -1,3 +1,4 @@
+env: dev
 spring:
   application:
     # 设置应用名称，否则的话显示UNKNOWN
