@@ -1,4 +1,4 @@
-env: dev3
+env: dev4
 spring:
   application:
     # 设置应用名称，否则的话显示UNKNOWN
