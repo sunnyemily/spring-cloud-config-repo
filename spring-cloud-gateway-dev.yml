@@ -1,7 +1,7 @@
 spring:
   application:
     # 设置应用名称，否则的话显示UNKNOWN
-    name: spring-cloud-zuul
+    name: spring-cloud-gateway
 
 server:
   # 服务端口号
